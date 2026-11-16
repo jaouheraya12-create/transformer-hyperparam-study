@@ -1,0 +1,87 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Tests / outils
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Secrets et configuration locale (ne jamais versionner)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# ---------------------------------------------------------------------------
+# Modèles et checkpoints (aller sur Google Drive, pas sur GitHub)
+# ---------------------------------------------------------------------------
+outputs/
+checkpoints/
+checkpoint-*/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.h5
+models/
+saved_models/
+pytorch_model.bin
+tf_model.h5
+
+# ---------------------------------------------------------------------------
+# Suivi d'expériences
+# ---------------------------------------------------------------------------
+runs/
+wandb/
+tensorboard/
+lightning_logs/
+*.tfevents.*
+*.log
+
+# ---------------------------------------------------------------------------
+# Données locales (téléchargées par Hugging Face)
+# ---------------------------------------------------------------------------
+data/
+.cache/
+.cache/
+*.csv.gz
+*.arrow
+
+# ---------------------------------------------------------------------------
+# Système / éditeurs
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Résultats : les JSON et rapports sont versionnés, les figures lourdes non
+results/**/figures/*.pdf
